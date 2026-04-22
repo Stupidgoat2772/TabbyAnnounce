@@ -62,6 +62,15 @@ The `./install.sh` script handles everything for you. It automatically finds you
      ```
    - Press `Win + R`, type `shell:startup`, and drop the shortcut to `start-bot.bat` there.
 
+## ✨ Customization (Optional)
+
+### Bot Profile & Description
+To give your bot some personality:
+1. Go to your **Discord Developer Portal > [Your App] > Bot**.
+2. **Icon:** Upload the `tabby.png` file included in this repo.
+3. **Description:** In the "Description" or "About Me" field, you can use:
+   > 🐾 **TabbyAnnounce** — Your friendly neighborhood announcement bot. I live in a spreadsheet and post reminders so you don't have to. Powered by Node.js and a very organized cat.
+
 ## 🛠️ Troubleshooting
 - **Node not found?** On Linux/macOS, run `which node`. On Windows, run `where node`. Ensure the path matches your startup scripts.
 - **Bot isn't posting?** Verify the sheet is shared with the service account email.
