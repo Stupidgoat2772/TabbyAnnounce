@@ -45,28 +45,21 @@ To get channel links easily:
 3. **Right-click** the desired text channel in the sidebar and select **Copy Link**. 
    - *It should look like: `https://discord.com/channels/123.../456...`*
 
-## 🖥️ Platform-Specific Setup
+## 🖥️ Start on Boot (Automatic Startup)
 
-### Linux (Arch, Fedora, Debian, etc.)
-The `./install.sh` script handles everything for you. It automatically finds your `node` path and adds the `@reboot` job to `crontab`.
+### Linux
+Run `./install.sh`. It handles everything and adds the bot to your `crontab`.
 
 ### macOS
-1. Run `./install.sh` (this will install dependencies and create the startup script).
-2. To run on boot, add the `start-bot.sh` script to your **Login Items**:
-   - Open **System Settings > General > Login Items**.
-   - Click the **+** and select `start-bot.sh`.
+1. Run `npm run setup`.
+2. Open **System Settings > General > Login Items**.
+3. Click **+** and select `start-bot.sh` from the TabbyAnnounce folder.
 
 ### Windows
-1. Open PowerShell or Command Prompt in the folder.
-2. Run `npm install`.
-3. To run on boot, create a shortcut of a batch file in your **Startup** folder:
-   - Create `start-bot.bat`: 
-     ```batch
-     cd /d %~dp0
-     node index.js
-     pause
-     ```
-   - Press `Win + R`, type `shell:startup`, and drop the shortcut to `start-bot.bat` there.
+1. Run `npm run setup`.
+2. Press `Win + R`, type `shell:startup`, and hit Enter.
+3. Right-click `start-bot.bat` in the TabbyAnnounce folder, select **Show more options > Create shortcut**.
+4. Move that shortcut into the Startup folder you just opened.
 
 ## ✨ Customization (Optional)
 
