@@ -20,6 +20,12 @@ Open the newly created `.env` file and fill in your details:
 ### 3. Google Credentials
 Place your `google-credentials.json` file inside the `TabbyAnnounce` folder.
 
+### 4. Spreadsheet Setup
+1. **Open the Template:** [TabbyTemplate](https://docs.google.com/spreadsheets/d/1W9zbAPQiS4kV5AQj4aeXyG0w4wXopJGLl9aoUupav4M/edit?usp=sharing).
+2. **Copy it:** Go to **File > Make a copy** to save it to your own Google Drive.
+3. **Share it:** Copy your service account email (from step 1) and share your new sheet with it as an **Editor**.
+4. **Get the Link:** Copy the URL of your new sheet and paste it into your `.env` file as the `SPREADSHEET_ID`.
+
 ## ⏰ Scheduling Patterns
 TabbyAnnounce understands simple, deterministic commands in the `Schedule` column:
 - `daily 9am` or `daily 09:00`
