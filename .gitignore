@@ -1,0 +1,5 @@
+.env
+google-credentials.json
+node_modules/
+tabby.log
+.DS_Store
